@@ -1,39 +1,40 @@
 {
-  "比比多味豆": {
-    "type": "consumable",
-    "effect": {"health": 3},
-    "message": "你吃了一颗比比多味豆，感觉精神焕发！"
-  },
-  "学院袍": {
-    "type": "wearable",
-    "effect": {"defense": 5},
-    "message": "你穿上学院袍，感觉更安全了！",
-    "slot": "body"
-  },
-  "魔杖": {
-    "type": "wearable",
-    "effect": {"magic": 10},
-    "message": "你挥舞魔杖，魔法力量增强！",
-    "slot": "hand"
-  },
-  "魔法零食": {
-    "type": "consumable",
-    "effect": {"health": 5},
-    "message": "你吃了一些魔法零食，体力恢复了！"
-  },
-  "月光草": {
-    "type": "material",
-    "effect": {"magic": 3},
-    "message": "月光草在魔药中发出柔和的光芒"
-  },
-  "龙鳞": {
-    "type": "material",
-    "effect": {"defense": 3},
-    "message": "龙鳞蕴含着强大的防护魔法"
-  },
-  "龙蛋": {
-    "type": "special",
-    "effect": {"magic": 15},
-    "message": "龙蛋散发出温暖的生命能量！"
-  }
+    "比比多味豆": {
+        "type": "consumable", 
+        "effect": {"health": 3}, 
+        "message": "你吃了一颗比比多味豆，感觉精神焕发！"
+    },
+    "学院袍": {
+        "type": "wearable", 
+        "effect": {"magic": 5}, 
+        "message": "你穿上学院袍，感觉魔法更充沛了！",
+        "slot": "body"
+    },
+    "魔杖": {
+        "type": "wearable", 
+        "effect": {"magic": 10}, 
+        "message": "你挥舞魔杖，魔法力量增强！",
+        "slot": "hand"
+    },
+    "魔法零食": {
+        "type": "consumable", 
+        "effect": {"health": 5}, 
+        "message": "你吃了一些魔法零食，体力恢复了！"
+    },
+    }
+    "月光草": {
+        "type": "material",
+        "effect": {"magic": 3},
+        "message": "月光草在魔药中发出柔和的光芒"
+    },
+    "龙鳞": {
+        "type": "material",
+        "effect": {"magic": 8},
+        "message": "龙鳞蕴含着强大的防护魔法"
+    },
+    "龙蛋": {
+        "type": "special",
+        "effect": {"magic": 15},
+        "message": "龙蛋散发出温暖的生命能量！"
+    }
 }

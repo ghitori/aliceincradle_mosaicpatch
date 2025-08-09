@@ -302,30 +302,11 @@ function updateStats(stats, equipment) {
     document.querySelector('.stat-number:nth-child(2)').textContent = `${stats.san}/100`;
     document.querySelector('.stat-value[style*="fatigue"]').style.width = `${stats.fatigue}%`;
     document.querySelector('.stat-number:nth-child(3)').textContent = `${stats.fatigue}/100`;
-    const galleons = document.getElementById('galleons-stat');
-    if (galleons) galleons.textContent = `加隆: ${stats.galleons}`;
-    const sickle = document.getElementById('sickle-stat');
-    if (sickle) sickle.textContent = `西可: ${stats.sickle}`;
-    const knut = document.getElementById('knut-stat');
-    if (knut) knut.textContent = `纳特: ${stats.knut}`;
-    const timeLabel = document.getElementById('time-stat');
-    if (timeLabel) timeLabel.textContent = `时间: ${stats.time}`;
-    // 敌人血量在战斗页面主区显示，不在侧边栏；若存在则更新
-    if (typeof stats.enemy_health !== 'undefined' && typeof stats.enemy_max_health !== 'undefined') {
-        const enemyHpLabel = document.getElementById('enemy-hp-label');
-        if (enemyHpLabel) {
-            enemyHpLabel.textContent = `敌人血量: ${stats.enemy_health}/${stats.enemy_max_health}`;
-        }
-    }
-    // 更新防御显示（如果后端返回 defense_total 则优先，否则仅显示基础防御）
-    const defenseElement = document.getElementById('defense-stat');
-    if (defenseElement) {
-        if (typeof stats.defense_total !== 'undefined') {
-            defenseElement.textContent = `${stats.defense_total}`;
-        } else if (typeof stats.defense !== 'undefined') {
-            defenseElement.textContent = `${stats.defense}`;
-        }
-    }
+    document.querySelector('.stat:nth-child(4) .stat-label').textContent = `加隆: ${stats.galleons}`;
+    document.querySelector('.stat:nth-child(5) .stat-label').textContent = `西可: ${stats.sickle}`;
+    document.querySelector('.stat:nth-child(6) .stat-label').textContent = `纳特: ${stats.knut}`;
+    document.querySelector('.stat:nth-child(7) .stat-label').textContent = `时间: ${stats.time}`;
+    document.querySelector('.stat:nth-child(8) .stat-label').textContent = `敌人血量: ${stats.enemy_health}/${stats.enemy_max_health}`;
     document.querySelector('.inventory li:nth-child(1)').textContent = `手部: ${equipment.hand || '空'}`;
     document.querySelector('.inventory li:nth-child(2)').textContent = `身体: ${equipment.body || '空'}`;
 }

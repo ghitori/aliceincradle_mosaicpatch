@@ -39,20 +39,16 @@
                     <span class="stat-number">{{ stats.fatigue }}/100</span>
                 </div>
                 <div class="stat">
-                    {% set temp_def = game_state.battle.defense_bonus.amount if game_state.battle.defense_bonus.duration > 0 else 0 %}
-                    <span class="stat-label">防御力: <span id="defense-stat">{{ stats.defense + temp_def }}</span></span>
+                    <span class="stat-label">加隆: {{ stats.galleons }}</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-label" id="galleons-stat">加隆: {{ stats.galleons }}</span>
+                    <span class="stat-label">西可: {{ stats.sickle }}</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-label" id="sickle-stat">西可: {{ stats.sickle }}</span>
+                    <span class="stat-label">纳特: {{ stats.knut }}</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-label" id="knut-stat">纳特: {{ stats.knut }}</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-label" id="time-stat">时间: {{ stats.time }}</span>
+                    <span class="stat-label">时间: {{ stats.time }}</span>
                 </div>
             </div>
             <div class="inventory-section">
@@ -98,7 +94,7 @@
             </div>
             {% endif %}
             <div class="stat">
-                <span class="stat-label" id="enemy-hp-label">敌人血量: {{ enemy.health }}/{{ enemy.max_health }}</span>
+                <span class="stat-label">敌人血量: {{ enemy.health }}/{{ enemy.max_health }}</span>
             </div>
             <div class="battle-actions">
                 <h2>选择战斗技能（最多3个）</h2>

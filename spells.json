@@ -5,7 +5,7 @@
         {"name": "开锁咒", "type": 1, "effect": {"damage": 12}, "description": "打开被锁住的门或箱子"},
         {"name": "修复咒", "type": 1, "effect": {"damage": 10}, "description": "修复损坏的物品"},
         {"name": "守护神咒", "type": 3, "effect": {"damage": 15, "duration": 3}, "description": "召唤守护神抵御摄魂怪"},
-        {"name": "盔甲护身", "type": 2, "effect": {"defense_boost": 25, "duration": 2}, "description": "短时间内提高防御力"},
+        {"name": "盔甲护身", "type": 2, "effect": {"defense": 1}, "description": "创造魔法防护屏障"},
         {"name": "增益咒", "type": 4, "effect": {"attack_boost": 0.2, "duration": 3}, "description": "增加下几回合的攻击力"}
     ]
 }
